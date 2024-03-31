@@ -61,16 +61,16 @@ def question7():
     answers = {}
 
     # bool: True/False
-    answers["(a)"] = True
+    answers["(a)"] = False
     answers["(b)"] = True
     answers["(c)"] = False
-    answers["(d)"] = True
+    answers["(d)"] = False
 
     # explain_string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+    answers["(a) explain"] = "As observed in equation 6.59, the gradients at a particular layer l+1 are being used to compute the gradients of the previous layer l, which is further used to compute the partial derivatives with resepct to the loss and get the weights and biases of the layer l. Gradients of layer l cannot be used to compute weights of layer l+1. The exact statement from the book - The previous equation provides a concise representation of the δl j values at layer l in terms of the δl+1 i values computed at layer l + 1"
+    answers["(b) explain"] = "As seen in equations 6.58, 6.59, the outputs of the l-th layer is being used as inputs in the l+1-th layer. Thus, for a test instance as well the activations of a certain are being considered to get the activations of the next layer"
+    answers["(c) explain"] = "Vanishing gradient problem in very deep neural networks, when the value of the gradients decreases as the number of layers increases, due to repeated multiplication from the output layers to hidden layers leading to ineffective learning. This is illustrated in section 6.8.2 of the book"
+    answers["(d) explain"] = "The gradients with respect to the loss becoming 0 occurs in the case of vanishing gradients problem, infact when all the training examples have been classified correctly then the loss should be zero."
 
     return answers
 
