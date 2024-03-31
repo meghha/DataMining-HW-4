@@ -87,7 +87,7 @@ def question8():
     answers["(a) Relationship between X_1 and X_2"] = "dependent"
 
     # string: "yes" or "no"
-    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "no"
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "yes"
 
     # float
     answers["(c) P(X_1=1 | +)"] = 0.8
@@ -99,13 +99,13 @@ def question8():
 
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
-    answers["(d) Row 1"] = "+
-    answers["(d) Row 2"] = None
-    answers["(d) Row 3"] = None
-    answers["(d) Row 4"] = None
+    answers["(d) Row 1"] = "+"
+    answers["(d) Row 2"] = "+"
+    answers["(d) Row 3"] = "+"
+    answers["(d) Row 4"] = "+"
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = None
+    answers["(d) Training error rate"] = 0.5
 
     return answers
 
